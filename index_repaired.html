@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFyWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDMgNzkuOTY5MGE4NywgMjAyNS8wMy8wNi0xOToxMjowMyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI3LjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyNS0xMS0wOVQyMToyNDowNC0wNTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmI4ZTczZDcyLTZiYTMtNmM0ZC1iZmJmLTg3ZGIxNDczNmVhNiIgeG1wTU06RG9jdW1lbnRJRD0i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"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>VermiCalc - Vermicompost Calculator</title>
+<meta content="#0aaec7" name="theme-color"/>
+
+<style>
+/* =========================================
+   VermiCalc - Consolidated & Cleaned CSS
+   ========================================= */
+
+:root {
+  /* -- Light Theme -- */
+  --bg-gradient: linear-gradient(180deg, #E9F8FF 0%, #D6F4F6 40%, #DFF9FF 100%);
+  --text: #05314D;
+  --card-bg: rgba(214, 243, 247, 0.98);
+  --border: rgba(5, 49, 77, 0.25);
+  --btn-grad: linear-gradient(90deg, #3AC2D7, #1FA8C5);
+  --btn-text: #ffffff;
+  --input-bg: #ffffff;
+  --gauge-bg: #E9F8FF;
+  --success: #1FA8C5;
+  --muted: #32627A;
+  --shadow: 0 10px 28px rgba(5, 49, 77, 0.14);
+}
+
+body.dark-mode {
+  /* -- Dark Theme -- */
+  --bg-gradient: #001F3F; /* Solid Navy */
+  --text: #E0F7FA;
+  --card-bg: #003355;
+  --border: rgba(255, 255, 255, 0.15);
+  --btn-grad: linear-gradient(90deg, #2397ab, #1b6e7f);
+  --input-bg: #002845;
+  --gauge-bg: #001a33;
+  --muted: #8AAAB5;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Base --- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  padding: 14px;
+  padding-bottom: 88px;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg-gradient);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container { max-width: 900px; margin: 0 auto; }
+
+/* --- Components --- */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+}
+
+input, select, button {
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 10px;
+  background: var(--input-bg);
+  color: var(--text);
+  outline: none;
+}
+
+input:focus, select:focus, button:focus {
+  box-shadow: 0 0 0 2px rgba(63, 190, 214, 0.55);
+}
+
+/* --- Header --- */
+#fixedHeader {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+}
+.header-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 20px;
+  border-radius: 999px;
+  background: var(--btn-grad);
+  box-shadow: var(--shadow);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Default: Hide short title */
+.header-title-short {
+  display: none;
+}
+
+/* --- Theme Toggle --- */
+#themeSlider { justify-content:center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 100;
+}
+.track {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  border-radius: 24px;
+  background: #3AC2D7;
+  cursor: pointer;
+}
+.knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+body.dark-mode .knob { transform: translateX(20px); }
+
+/* --- Material Rows (Grid System) --- */
+.material-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- Selection Button (Enhanced) */
+.material-select-wrap { position: relative; width: 100%; }
+.material-select-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--input-bg);
+  cursor: pointer;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+/* --- Buttons & Toolbar --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--btn-grad);
+  color: var(--btn-text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.1s;
+}
+.btn:active { transform: scale(0.98); }
+
+.toolbar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* --- Gauge --- */
+.gauge-wrap {
+  width: 100%;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--gauge-bg);
+  overflow: hidden;
+  margin-top: 10px;
+}
+.gauge-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
+  transition: width 0.5s ease;
+}
+
+/* --- Help Sheet & Modal --- */
+.help-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4); 
+  z-index: 2000; display: none;
+}
+.help-overlay.show { display: block; }
+
+#helpSheet {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  max-width: 900px; margin: 0 auto;
+  background: var(--bg-gradient);
+  border-top-left-radius: 20px; border-top-right-radius: 20px;
+  box-shadow: 0 -5px 25px rgba(0,0,0,0.3);
+  z-index: 2001;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  max-height: 80vh;
+  display: flex; flex-direction: column;
+}
+#helpSheet.show { transform: translateY(0); }
+
+.help-header { padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.help-title { flex: 1; text-align: center; }
+
+.help-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+.help-content { padding: 15px; overflow-y: auto; }
+
+/* Tabs (Now styled like .btn) */
+.help-tabs { 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding-bottom: 10px; 
+    /* START MODIFICATION: Adding 10px padding to the help tabs container */
+    padding-left: 10px;
+    padding-right: 10px;
+    /* END MODIFICATION */
+}
+@media (min-width: 700px) {
+  .help-tabs {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-flow: column;
+    /* This rule is now redundant due to the general .help-tabs rule above,
+       but is kept in case of future structural changes, though it is
+       implicitly covered by the change above. */
+  }
+}
+
+
+.help-tab {
+  background: var(--btn-grad); 
+  color: var(--btn-text); 
+  border: none;
+  padding: 12px 20px; 
+  border-radius: 999px; 
+  cursor: pointer; 
+  white-space: nowrap;
+  font-weight: 600; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0.9; 
+  transition: opacity 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+
+  white-space: nowrap;}
+/* Ensure tabs fill grid space */
+.help-tabs .help-tab {
+    width: 100%;
+    white-space: normal; /* Allow text to wrap if needed */
+
+  white-space: nowrap;}
+
+.help-tab:active { 
+  transform: scale(0.98); /* Matches .btn active scale */
+}
+.help-tab.active { 
+  background: var(--btn-grad); /* Keep the gradient */
+  opacity: 1; /* Full opacity when active/selected */
+  box-shadow: 0 0 10px var(--success); /* Keep the glow effect for selection */
+}
+
+/* Pages */
+.help-page { display: none; }
+.help-page.active { display: block; }
+.help-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 15px; }
+.info-card {
+  background: linear-gradient(135deg, #27C34A, #1F9A3A);
+  color: white; padding: 12px; border-radius: 12px; cursor: pointer;
+}
+
+/* Enhanced Dropdown List (MATERIAL PICKER) */
+.enhanced-panel {
+  position: fixed; 
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border-radius: 12px; 
+  z-index: 3000;
+  width: 320px; 
+  max-height: 90vh;
+  display: none; 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.enhanced-panel.open { display: flex; } /* Show as flex container */
+.enhanced-search { width: 100%; margin-bottom: 8px; }
+.enhanced-list { 
+  flex-grow: 1; 
+  overflow-y: auto; 
+} 
+.enhanced-item { padding: 4px 6px; cursor: pointer; border-radius: 6px; }
+.enhanced-item:hover { background: rgba(58, 194, 215, 0.2); }
+
+
+/* Print Button - MOVED TO UPPER LEFT & Resized */
+#printPill {
+  position: fixed; 
+  top: 20px; 
+  left: 20px; 
+  padding: 8px 16px; 
+  border-radius: 999px; 
+  background: var(--btn-grad); 
+  color: var(--btn-text); 
+  cursor: pointer; 
+  z-index: 5000; 
+  font-size: 14px; 
+  font-weight: 600; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  opacity: 1; 
+  transition: transform 0.1s; 
+}
+#printPill:active { 
+  transform: scale(0.98); 
+}
+
+@media print {
+  .toolbar, #themeSlider, #printPill, #helpSheet { display: none !important; }
+  body { background: white; color: black; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
+}
+
+#toast {
+  position: fixed; top: 20px; right: 20px;
+  background: var(--success); color: white;
+  padding: 10px 20px; border-radius: 8px;
+  opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 6000;
+}
+#toast.show { opacity: 1; }
+
+
+.material-row > * {
+  min-width: 0;              
+}
+
+.material-row input,
+.material-row select {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.material-select-btn {
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================
+   Responsive Adjustments (Portrait Phone)
+   ========================================= */
+@media (max-width: 600px) and (orientation: portrait) {
+  
+  /* 1. Header Adjustments */
+  .header-title { display: none !important; }
+  .header-title-short { display: inline !important; font-size: 1rem; }
+  .header-inner { padding: 8px 16px; }
+  .header-inner img { width: 24px !important; height: 24px !important; }
+
+  #fixedHeader {
+    position: relative;
+    left: -10px;
+    top: -10px;
+  }
+
+  /* 2. Theme Slider Adjustments */
+  #themeSlider { top: 8px !important; }
+  #themeSlider .track { transform: scale(0.75); transform-origin: right center; }
+  #themeSlider span:first-child { margin-left: 0 !important; transform: translateX(7px); }
+
+  /* 3. Material Rows: 3-Column, 2-Row Rigid Grid */
+  .material-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Grid Positioning */
+  .material-select-wrap { grid-column: 1; grid-row: 1; }
+  .material-row input[placeholder="Material"] { display: block; grid-column: 2; grid-row: 1; }
+  .material-row input[placeholder="C:N"] { grid-column: 3; grid-row: 1; }
+  .material-row input[placeholder="Amount"] { grid-column: 1; grid-row: 2; }
+  .material-row select { grid-column: 2; grid-row: 2; }
+  .material-row button:last-child { grid-column: 3; grid-row: 2; }
+  
+  .toolbar {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  /* 4. MAIN SHIFT - Moving Content Up */
+  /* This moves the calculator container up 15px */
+  #root {
+    margin-top: -15px; 
+  }
+}
+
+
+/* --- Logo Fix Additions --- */
+.header-inner img { min-width:1px; width:32px; height:32px; }
+
+
+/* Portrait logo size + show logo */
+@media (max-width:600px) and (orientation:portrait){
+  .header-inner img{
+    display:inline-block!important;
+    width:30px!important;
+    height:30px!important;
+  }
+}
+
+
+
+.pulse-glow {
+  /* LIGHT MODE: stronger, brighter guidance */
+  animation: glowPulseLight 1.0s ease-in-out infinite;
+  box-shadow: 0 0 0px rgba(0,0,0,0);
+  border-radius: 999px;
+}
+
+/* DARK MODE: revert to original softer glow so it isn't overpowering */
+body.dark-mode .pulse-glow {
+  animation: glowPulseDark 1.6s ease-in-out infinite;
+}
+
+/* Light mode keyframes (brighter) */
+@keyframes glowPulseLight {
+  0%   { box-shadow: 0 0 0px  rgba(0, 255, 255, 0.0); }
+  50%  { box-shadow: 0 0 32px rgba(0, 255, 255, 1.0); }
+  100% { box-shadow: 0 0 0px  rgba(0, 255, 255, 0.0); }
+}
+
+/* Dark mode keyframes (original strength) */
+@keyframes glowPulseDark {
+  0%   { box-shadow: 0 0 0px  rgba(0, 255, 255, 0.0); }
+  50%  { box-shadow: 0 0 16px rgba(0, 255, 255, 0.7); }
+  100% { box-shadow: 0 0 0px  rgba(0, 255, 255, 0.0); }
+}
+
+  50% { box-shadow: 0 0 16px rgba(0, 255, 255, 0.7); }
+  100% { box-shadow: 0 0 0px rgba(0, 255, 255, 0.0); }
+}
+
+
+/* Help tab glow */
+.help-tab.active.pulse-glow {
+  animation: helpPulse 1.4s infinite ease-in-out;
+}
+@keyframes helpPulse {
+  0% { box-shadow: 0 0 6px 2px rgba(0,255,255,0.7); }
+  50% { box-shadow: 0 0 14px 4px rgba(0,255,255,1); }
+  100% { box-shadow: 0 0 6px 2px rgba(0,255,255,0.7); }
+}
+body:not(.dark-mode) .help-tab.active.pulse-glow {
+  box-shadow: 0 0 12px 3px rgba(0,150,200,0.9);
+}
+
+/* --- Professional hover states & transitions --- */
+.btn,
+.help-tab,
+#printPill,
+.material-select-btn,
+.track {
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover,
+.help-tab:hover,
+#printPill:hover,
+.material-select-btn:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+}
+
+.track:hover {
+  box-shadow: 0 0 0 2px rgba(63,190,214,0.45);
+}
+
+/* Slight lift on hover for primary pills */
+.btn:hover,
+.help-tab:hover,
+#printPill:hover {
+  transform: translateY(-1px);
+}
+
+
+
+/* ===========================
+   Material Analyzer Panel
+   =========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Enhanced dropdown info button */
+.enhanced-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.enhanced-item-label {
+  flex: 1;
+}
+
+
+
+@media (max-width: 600px) and (orientation: portrait) {
+  
+}
+
+
+/* === FORCE BUTTON TEXT TO NEVER WRAP (ALL BUTTONS, ALL MODES) === */
+button,
+.toolbar button,
+.toolbar label,
+.load-label,
+button span,
+.toolbar button span {
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: clip !important;
+}
+
+/* === Titlebar Pill + Logo Adjustments === */
+.header-inner {
+  padding: 5px 20px !important; /* reduced ~15% from 6px */
+  overflow: visible !important; /* allow logo overflow */
+}
+
+.header-inner img {
+  width: 37px !important; /* increased 15% from 32px */
+  height: 37px !important;
+}
+
+/* === HARD DISABLE: Info card / analyzer system (visual + interaction) === */
+
+
+.enhanced-item {
+  justify-content: flex-start !important;
+}
+
+</style>
+
+  <!-- PWA manifest (single-file, injected as a Blob URL) -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  
+
+<link rel="manifest" href="manifest.json">
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js");}</script>
+</head>
+<body>
+
+<div class="help-overlay" id="helpOverlay"></div>
+<div id="printPill" onclick="window.print()" role="button" tabindex="0" aria-label="Print this VermiCalc mix" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.print();}">Print</div>
+<div id="toast">✅ Action Saved!</div>
+
+<div id="themeSlider">
+  <span>Light</span>
+  <label class="track">
+    <input type="checkbox" id="darkModeToggle" style="display:none;" aria-label="Toggle dark mode theme.">
+    <span class="knob"></span>
+  </label>
+  <span>Dark</span>
+</div>
+
+<div id="fixedHeader">
+  <div class="header-inner"> 
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFyWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDMgNzkuOTY5MGE4NywgMjAyNS8wMy8wNi0xOToxMjowMyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI3LjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyNS0xMS0wOVQyMToyNDowNC0wNTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmI4ZTczZDcyLTZiYTMtNmM0ZC1iZmJmLTg3ZGIxNDczNmVhNiIgeG1wTU06RG9jdW1lbnRJRD0i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" alt="VermiCalc logo" class="header-logo"/>
+    <span class="header-title">VermiCalc - Vermicompost Calculator</span>
+    <span class="header-title-short">VermiCalc</span>
+  </div>
+</div>
+
+<main class="container" id="root" role="main"></main>
+
+<div style="text-align:center; margin-top:20px; font-size:0.85rem; opacity:0.7;">
+  ©2025 Elbert Creed, Gabe Taylor. All rights reserved.
+</div>
+
+
+
+<div id="helpSheet" aria-labelledby="helpTitle" role="dialog">
+  <div class="help-header">
+    <span class="help-title" id="helpTitle" style="font-weight:700; font-size:1.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFyWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDMgNzkuOTY5MGE4NywgMjAyNS8wMy8wNi0xOToxMjowMyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI3LjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyNS0xMS0wOVQyMToyNDowNC0wNTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjUtMTEtMjZUMDI6NTA6MTQtMDU6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmI4ZTczZDcyLTZiYTMtNmM0ZC1iZmJmLTg3ZGIxNDczNmVhNiIgeG1wTU06RG9jdW1lbnRJRD0i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" style="width:24px;height:24px;vertical-align:middle;margin-right:6px;">VermiCalc Help
+    </span>
+    <button class="help-close" onclick="closeHelp()">×</button>
+  </div>
+
+  <div class="help-tabs">
+    <button class="help-tab active" onclick="switchTab('overview')">📘 Overview</button>
+    <button class="help-tab" onclick="switchTab('cnbasics')">🧪 C:N Basics</button>
+    <button class="help-tab" onclick="switchTab('browns')">🍂 Browns</button>
+    <button class="help-tab" onclick="switchTab('greens')">🥬 Greens</button>
+    <button class="help-tab" onclick="switchTab('adjust')">⚖️ Adjust Mix</button>
+    <button class="help-tab" onclick="switchTab('issues')">⚠️ Issues</button>
+  </div>
+
+  <div class="help-content">
+    <div id="page-overview" class="help-page active">
+      <h3>📘 VermiCalc — Your Vermicomposting Companion</h3>
+      <p>
+        VermiCalc helps you design a balanced vermicompost environment by estimating the
+        <strong>Carbon:Nitrogen (C:N) ratio</strong> of your bedding and feed mix.
+      </p>
+      <p>
+        A healthy C:N balance supports:
+      </p>
+      <ul>
+        <li>Stable moisture and structure in the bin</li>
+        <li>Odor-free operation</li>
+        <li>Strong worm activity and reproduction</li>
+        <li>Clean, steady decomposition (no heating)</li>
+        <li>High-quality, biologically active worm castings</li>
+      </ul>
+      <h4>How VermiCalc Works</h4>
+      <ol>
+        <li>Select bedding and feed materials from the preset list or add a custom material.</li>
+        <li>Enter how much of each material you plan to add.</li>
+        <li>VermiCalc calculates total carbon, total nitrogen, and the estimated C:N ratio.</li>
+      </ol>
+      <p>
+        Use VermiCalc before you build or refresh a bin so you can avoid problems like sour smells, worm stress, or slow processing. Always allow your mixture to sit for a few days and monitor the temperatures of your mix. Do not Introduce to your worms until the mixture has cooled below 80F.
+      </p>
+    </div>
+
+    <div id="page-cnbasics" class="help-page">
+      <h3>🧪 Why C:N Matters in Vermicomposting</h3>
+      <p>
+        Worms thrive in a <strong>cool, stable, carbon-rich</strong> environment.
+        They do not want heat spikes, strong ammonia, or rapid, hot decomposition.
+      </p>
+      <p>
+        Every material you add has some mix of <strong>carbon (C)</strong> and
+        <strong>nitrogen (N)</strong>. VermiCalc helps you balance them.
+      </p>
+      <h4>Ideal Vermicompost C:N Range</h4>
+      <ul>
+        <li><strong>Target range:</strong> ~<strong>42:1</strong></li>
+        <li>Higher carbon supports a gentle, worm-friendly environment.</li>
+        <li>Too much nitrogen increases the risk of odors and worm stress.</li>
+      </ul>
+      <h4>Signs of Imbalance</h4>
+      <ul>
+        <li>
+          <strong>C:N too high (too much carbon):</strong>
+          bin feels dry, food sits for a long time, worms cluster where food is softest.
+        </li>
+        <li>
+          <strong>C:N too low (too much nitrogen):</strong>
+          strong smells, wet or slimy patches, worms trying to escape or hiding at the edges.
+        </li>
+      </ul>
+      <p>
+        VermiCalc lets you see the ratio before you build or adjust a bin, so you can
+        make small, smart changes instead of big rescue operations later.
+      </p>
+    </div>
+
+    <div id="page-browns" class="help-page">
+      <h3>🍂 Carbon (“Browns”) — Bedding Materials</h3>
+      <p>
+        Carbon-rich materials form the <strong>bedding</strong> in a worm bin.
+        They create structure, hold moisture, and give microbes and worms a safe home.
+      </p>
+      <h4>Common Bedding Materials</h4>
+      <ul>
+        <li>Shredded cardboard and egg cartons</li>
+        <li>Shredded paper (non-glossy, black-and-white)</li>
+        <li>Coco coir</li>
+        <li>Shredded brown paper bags</li>
+        <li>Dry leaves</li>
+        <li>Coffee filters and paper tea bags</li>
+        <li>Aged sawdust or wood shavings (in small amounts)</li>
+      </ul>
+      <h4>Why Carbon Matters</h4>
+      <ul>
+        <li>Prevents sour or rotten odors</li>
+        <li>Absorbs excess moisture and nitrogen</li>
+        <li>Improves airflow and prevents compacted, slimy areas</li>
+        <li>Buffers acidity and keeps worms comfortable</li>
+      </ul>
+      <p>
+        A simple rule for most worm bins:
+        <strong>Use 2–3 times more bedding (browns) than food (greens) by volume.</strong>
+      </p>
+    </div>
+
+    <div id="page-greens" class="help-page">
+      <h3>🥬 Nitrogen (“Greens”) — Worm Food</h3>
+      <p>
+        Nitrogen-rich materials are the <strong>food</strong> worms and microbes break down.
+        The goal in vermicomposting is slow, steady processing — not heat.
+      </p>
+      <h4>Worm-Friendly Foods (Greens)</h4>
+      <ul>
+        <li>Fruit and vegetable scraps</li>
+        <li>Melon rinds and pumpkin</li>
+        <li>Banana peels</li>
+        <li>Coffee grounds (in moderation)</li>
+        <li>Cooked rice or pasta (small amounts)</li>
+        <li>Used tea leaves</li>
+        <li>Soft plant trimmings</li>
+      </ul>
+      <h4>Use with Caution or Avoid</h4>
+      <ul>
+        <li>Meat, dairy, oily or greasy foods</li>
+        <li>Very salty or heavily seasoned leftovers</li>
+        <li>Large amounts of citrus, onions, or garlic</li>
+        <li>Spicy peppers and hot sauces</li>
+        <li>Large amounts of bread or baked goods (can ferment quickly)</li>
+      </ul>
+      <p>
+        Chop food into smaller pieces, bury it under bedding, and stop feeding
+        if you notice odors or uneaten food building up.
+      </p>
+    </div>
+
+    <div id="page-adjust" class="help-page">
+      <h3>⚖️ Adjusting Your Mix</h3>
+      <p>
+        Use VermiCalc to see where your mix lands, then make small changes until the
+        C:N ratio is in a comfortable range for worms (around 42:1).
+      </p>
+      <h4>If the C:N is Too High (Too Much Carbon)</h4>
+      <p>Bin will be slow, dry, and cool.</p>
+      <ul>
+        <li>Add small amounts of soft, worm-safe food (greens).</li>
+        <li>Lightly mist with water if bedding feels dry or papery.</li>
+        <li>Avoid huge feeding spikes; adjust gradually.</li>
+      </ul>
+      <h4>If the C:N is Too Low (Too Much Nitrogen)</h4>
+      <p>Bin may smell, feel wet, or stress worms.</p>
+      <ul>
+        <li>Add plenty of dry bedding (cardboard, coir, shredded paper).</li>
+        <li>Gently fluff the top layer to restore airflow.</li>
+        <li>Pause feeding for a few days until things normalize.</li>
+      </ul>
+      <h4>General Worm Bin Tuning</h4>
+      <ul>
+        <li>Keep bedding as moist as a wrung-out sponge.</li>
+        <li>Maintain a thick top layer of dry bedding as a “blanket.”</li>
+        <li>Add crushed eggshells or minerals to help buffer acidity.</li>
+      </ul>
+    </div>
+
+    <div id="page-issues" class="help-page">
+      <h3>⚠️ Common Worm Bin Issues</h3>
+      <h4>Worms Trying to Escape</h4>
+      <p><strong>Possible causes:</strong> acidity, ammonia, overfeeding, or anaerobic spots.</p>
+      <p><strong>Fix:</strong> add dry bedding, stop feeding for a few days, and gently mix the top layer. Add crushed eggshells or a small amount of garden lime if the bin seems sour.</p>
+
+      <h4>Bad Odors (Rotten, Sour, or Ammonia)</h4>
+      <p><strong>Possible causes:</strong> too many greens, poor airflow, compacted material.</p>
+      <p><strong>Fix:</strong> add several handfuls of dry bedding, fluff lightly, and pause feeding until the smell fades.</p>
+
+      <h4>Too Wet or Sloppy</h4>
+      <p><strong>Fix:</strong> mix in plenty of shredded cardboard, coir, or paper. Keep a dry bedding layer on top to absorb moisture.</p>
+
+      <h4>Too Dry</h4>
+      <p><strong>Fix:</strong> lightly mist with water and add a small amount of moist food. Do not drench the bin; aim for even moisture.</p>
+
+      <h4>Protein Poisoning (Deadly for Worms)</h4>
+      <p>
+        <strong>Symptoms:</strong> Worms resemble a string of pearls,
+        mass die-off in pockets.
+      </p>
+      <p>
+        <strong>Fix:</strong> immediately add a large amount of fresh bedding, stop feeding,
+        and allow the bin to rebalance before feeding again.
+      </p>
+
+      <h4>Mites, Gnats, and Other Small Critters</h4>
+      <p>
+        Many tiny creatures are normal in worm bins, but large outbreaks usually mean
+        extra moisture or food.
+      </p>
+      <ul>
+        <li>Add dry bedding and reduce feeding.</li>
+        <li>Use a dry top layer of paper or cardboard.</li>
+        <li>For gnats, consider using Bti (mosquito dunks) in the area around the bin.</li>
+      </ul>
+      <p>
+        A healthy vermicompost system smells earthy, runs cool, and has worms spread
+        throughout the bedding, not just escaping at the lid.
+      </p>
+    </div>
+  </div>
+</div>
+  
+  <script>
+// ======================================================
+// VermiCalc Logic - Cleaned v19 (Final Fixes - Print Button Global)
+// ======================================================
+
+const presets = [
+  { name: 'Alfalfa meal', cn: 12 }, { name: 'Apple cores', cn: 35 }, { name: 'Avocado skins', cn: 35 },
+  { name: 'Azomite', cn: 0 }, { name: 'Bamboo leaves', cn: 50 }, { name: 'Bamboo paper', cn: 110 },
+  { name: 'Banana peels', cn: 35 }, { name: 'Basalt rock dust', cn: 0 }, { name: 'Beetroot powder', cn: 30 },
+  { name: 'Biochar (charged)', cn: 0 }, { name: 'Brown rice flour', cn: 22 }, { name: 'Cardboard shavings', cn: 350 },
+  { name: 'Cardboard tubes', cn: 350 }, { name: 'Cheerios', cn: 22 }, { name: 'Coco coir', cn: 80 },
+  { name: 'Coffee grounds', cn: 20 }, { name: 'Composted chicken manure', cn: 18 }, { name: 'Composted cow manure', cn: 18 },
+  { name: 'Composted rabbit manure', cn: 18 }, { name: 'Cooked pasta', cn: 16 }, { name: 'Cooked rice', cn: 14 },
+  { name: 'Corn', cn: 18 }, { name: 'Corn meal', cn: 18 }, { name: 'Cotton balls', cn: 150 },
+  { name: 'Cotton fabric scraps', cn: 100 }, { name: 'Crushed egg shells', cn: 0 }, { name: 'Dolomite Lime', cn: 0 },
+  { name: 'Dry leaves', cn: 60 }, { name: 'Dryer lint (natural fiber)', cn: 150 }, { name: 'Evergreen needles', cn: 55 },
+  { name: 'Food scraps', cn: 15 }, { name: 'Fresh weeds', cn: 25 }, { name: 'Fruit and veggie scraps', cn: 20 },
+  { name: 'Fruit scraps', cn: 35 }, { name: 'Frosted Flakes', cn: 30 }, { name: 'Goat manure', cn: 23 },
+  { name: 'Grass clippings', cn: 17 }, { name: 'Green plant trim', cn: 20 }, { name: 'Greensand', cn: 0 },
+  { name: 'Gypsum', cn: 0 }, { name: 'Hay', cn: 40 }, { name: 'Hemp bedding', cn: 100 },
+  { name: 'Horse manure', cn: 25 }, { name: 'Jute twine scraps', cn: 45 }, { name: 'Layer chicken crumbles', cn: 10 },
+  { name: 'Llama manure', cn: 28 }, { name: 'Millet', cn: 25 }, { name: 'Mixed vegetable scraps', cn: 22 },
+  { name: 'Mushroom stems', cn: 22 }, { name: 'Mulch fines', cn: 100 }, { name: 'Oat straw', cn: 70 },
+  { name: 'Oyster shell powder', cn: 0 }, { name: 'Pine shavings', cn: 400 }, { name: 'Paper bags', cn: 150 },
+  { name: 'Paper egg cartons', cn: 170 }, { name: 'Paperboard', cn: 350 }, { name: 'Parchment paper', cn: 175 },
+  { name: 'Peanut shells', cn: 35 }, { name: 'Peat moss', cn: 60 }, { name: 'Pig manure', cn: 20 },
+  { name: 'Pumpkin guts', cn: 20 }, { name: 'Rice bran', cn: 20 }, { name: 'Rotten wood', cn: 250 },
+  { name: 'Rye grain', cn: 36 }, { name: 'Sawdust', cn: 400 }, { name: 'Sheep manure', cn: 20 },
+  { name: 'Shredded corrugated cardboard', cn: 400 }, { name: 'Shredded newspaper', cn: 175 },
+  { name: 'Spent Brewery Grains', cn: 15 }, { name: 'Spent Mushroom Substrate', cn: 30 },
+  { name: 'Sphagnum peat moss', cn: 58 }, { name: 'Straw', cn: 80 }, { name: 'Sweet corn husks', cn: 60 },
+  { name: 'Tea leaves', cn: 12 }, { name: 'Tomato vines', cn: 35 }, { name: 'Unbleached paper towels', cn: 150 },
+  { name: 'Used napkins', cn: 150 }, { name: 'Wheat bran', cn: 20 }, { name: 'Whole grain oats', cn: 25 },
+  { name: 'Whole wheat flour', cn: 20 }, { name: 'Wood chips', cn: 400 }, { name: 'Crushed eggshells', cn: 8 },
+  { name: 'Coffee filters', cn: 170 }, { name: 'Banana leaves', cn: 42 }, { name: 'Cocoa hull mulch', cn: 40 },
+  { name: 'Paper plates (uncoated)', cn: 150 }, { name: 'Shredded magazine paper', cn: 175 },
+  { name: 'Biochar (uncharged)', cn: 0 }, { name: 'Bokashi pre-compost', cn: 12 },
+  { name: 'Brewery yeast discard', cn: 10 }, { name: 'Nut shells (mixed)', cn: 35 }, { name: 'Corn cobs', cn: 100 },
+  { name: 'Rice hulls', cn: 100 }, { name: 'Chicken bedding (pine + manure)', cn: 25 }, { name: 'Duck manure', cn: 16 },
+  { name: 'Turkey manure', cn: 18 }, { name: 'Tomato leaves', cn: 25 }, { name: 'Pepper plant stems', cn: 60 },
+  { name: 'Sunflower stalks', cn: 70 }, { name: 'Melon rinds', cn: 30 }, { name: 'Flower bouquet waste', cn: 45 },
+  { name: 'Untreated wood shavings (mixed)', cn: 400 }, { name: 'Hardwood leaves', cn: 60 }, { name: 'Wood ash', cn: 0 },
+  { name: 'Bark fines', cn: 400 }, { name: 'Cardboard powder', cn: 400 }, { name: 'Worm chow', cn: 16.5 },
+].sort((a, b) => a.name.localeCompare(b.name));
+const groupedPresets = {
+  "Additives & Minerals": [
+    "Crushed egg shells",
+    "Azomite",
+    "Basalt rock dust",
+    "Biochar (charged)",
+    "Biochar (uncharged)",
+    "Dolomite Lime",
+    "Greensand",
+    "Gypsum",
+    "Oyster shell powder",
+    "Wood ash"
+  ],
+  "Bedding Materials": [
+    "Coco coir",
+    "Hemp bedding",
+    "Paper egg cartons",
+    "Shredded corrugated cardboard",
+    "Shredded newspaper",
+    "Unbleached paper towels",
+    "Used napkins"
+  ],
+  "Food Scraps": [
+    "Apple cores",
+    "Avocado skins",
+    "Banana peels",
+    "Cooked pasta",
+    "Cooked rice",
+    "Corn",
+    "Fruit scraps",
+    "Fruit & veggie scraps",
+    "Melon rinds",
+    "Mixed vegetable scraps",
+    "Pumpkin guts",
+    "Tea leaves",
+    "Tomato vines",
+    "Tomato leaves"
+  ],
+  "Grains & Meals": [
+    "Brown rice flour",
+    "Corn meal",
+    "Layer chicken crumbles",
+    "Millet",
+    "Oat straw",
+    "Rice bran",
+    "Rye grain",
+    "Wheat bran",
+    "Whole grain oats",
+    "Whole wheat flour",
+    "Worm chow"
+  ],
+  "Leaves & Plant Waste": [
+    "Bamboo leaves",
+    "Dried leaves",
+    "Evergreen needles",
+    "Green plant trim",
+    "Pepper plant stems",
+    "Sunflower stalks",
+    "Flower bouquet waste",
+    "Hardwood leaves",
+    "Banana leaves"
+  ],
+  "Manures": [
+    "Composted chicken manure",
+    "Composted cow manure",
+    "Composted rabbit manure",
+    "Composted rabbit manure",
+    "Goat manure",
+    "Horse manure",
+    "Llama manure",
+    "Pig manure",
+    "Sheep manure",
+    "Chicken bedding (pine + manure)",
+    "Duck manure",
+    "Turkey manure"
+  ],
+  "Papers & Cardboards": [
+    "Cardboard shavings",
+    "Cardboard tubes",
+    "Paper bags",
+    "Paperboard",
+    "Parchment paper",
+    "Shredded magazine paper",
+    "Coffee filters",
+    "Cotton balls",
+    "Cotton fabric scraps"
+  ],
+  "Plant-Based Industrial": [
+    "Bamboo paper",
+    "Mulch fines",
+    "Rotten wood",
+    "Sphagnum peat moss",
+    "Peat moss"
+  ],
+  "Wood Products": [
+    "Pine shavings",
+    "Sawdust",
+    "Wood chips",
+    "Untreated wood shavings (mixed)",
+    "Bark fines",
+    "Cardboard powder"
+  ]
+};
+
+let materials = [{ name: '', cn: '', parts: '', unit: 'lbs' }];
+let target = 42;
+const history = [];
+const root = document.getElementById('root');
+const toastEl = document.getElementById('toast');
+const printPill = document.getElementById('printPill'); 
+
+// --- Core Logic ---
+const showToast = (msg) => {
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  setTimeout(() => toastEl.classList.remove('show'), 2000);
+};
+
+const pushHistory = () => {
+  history.push(JSON.parse(JSON.stringify(materials)));
+  if(history.length > 20) history.shift();
+};
+
+const undo = () => {
+  if (!history.length) return;
+
+  // Restore last materials snapshot
+  materials = history.pop();
+
+  // Ensure at least one empty row exists
+  if (!materials.length) {
+    materials.push({ name: '', cn: '', parts: '', unit: 'lbs' });
+  }
+
+  // After undo, stop any guided glow (user can continue manually)
+  guidedStep = 0;
+  render();
+};
+
+const computeTotals = () => {
+  let totalC = 0, totalN = 0, totalWeight = 0;
+  const unitFactor = { oz: 28.35, lbs: 453.6, g: 1, kg: 1000 };
+
+  materials.forEach(m => {
+    const amount = parseFloat(m.parts) || 0;
+    const c = parseFloat(m.cn) || 0;
+    if (amount > 0 && c > 0) {
+      const grams = amount * (unitFactor[m.unit] || 1);
+      const nitrogenPart = grams * (1 / (c + 1));
+      const carbonPart = grams * (c / (c + 1));
+      totalC += carbonPart;
+      totalN += nitrogenPart;
+      totalWeight += grams;
+    }
+  });
+  return { ratio: totalN > 0 ? totalC / totalN : 0 };
+};
+
+// ** GAUGE LOGIC **
+function calculateGaugeWidth(ratio, target) {
+  if (ratio <= 0 || target <= 0) return 0;
+  
+  // Symmetrical gauge: peak at target, drop off proportionally on both sides.
+  if (ratio <= target) {
+    // Too Green / High Nitrogen (Left side of 42)
+    return (ratio / target) * 100;
+  } else {
+    // Too Brown / High Carbon (Right side of 42)
+    return (target / ratio) * 100;
+  }
+}
+// ** END GAUGE LOGIC **
+
+// ** SUGGESTION LOGIC **
+function getSuggestion(r) {
+  const t = parseFloat(target) || 42;
+  if (!r || isNaN(r) || r === Infinity) return 'Select ▼ materials to begin..';
+  
+  // Tighter ranges for better guidance
+  if (r < t - 15) {
+    return '🚨 Very Low C:N. **Excessive Nitrogen (Greens)** - RISK OF AMMONIA/ANAEROBIC ISSUES. Add much more Cardboard/Browns!';
+  } else if (r < t - 5) {
+    return 'Low C:N. **High Nitrogen (Greens)**. Add more bedding/browns to balance.';
+  } else if (r > t + 15) {
+    return '🚨 Very High C:N. **Excessive Carbon (Browns)** - Mix will be very dry and slow to break down. Add much more Food/Greens!';
+  } else if (r > t + 5) {
+    return 'High C:N. **High Carbon (Browns)**. Add more food scraps/greens to balance.';
+  } else {
+    return '✅ Ideal C:N Ratio! Worms will thrive in this balanced mix.';
+  }
+}
+// ** END SUGGESTION LOGIC **
+
+// --- Utility Functions for Print Button Visibility (Global Logic) ---
+function hidePrintButton() {
+    if (printPill) {
+        printPill.style.display = 'none';
+    }
+}
+
+function showPrintButton() {
+    if (printPill) {
+        printPill.style.display = 'inline-flex'; // Restore default inline-flex display
+    }
+}
+// -------------------------------------------------------------------
+
+
+let guidedStep = 1; // 1 = select material, 2 = amount, 3 = +Add
+let guidedRow = 0;
+let guidedUsed = false; // becomes true after the first full glow sequence completes
+
+// Apply pulsing highlight based on current guided step
+function applyGuidedPulse() {
+  // Clear existing pulses
+  document.querySelectorAll('.pulse-glow').forEach(el => el.classList.remove('pulse-glow'));
+
+  // If guidedStep is 0, we are in "no glow" mode
+  if (!guidedStep) return;
+
+  const rows = document.querySelectorAll('.material-row');
+  if (!rows.length) return;
+
+  if (guidedRow < 0 || guidedRow >= rows.length) {
+    guidedRow = rows.length - 1;
+  }
+  const row = rows[guidedRow];
+
+  if (guidedStep === 1) {
+    // Step 1: highlight Selection button in this row
+    const selBtn = row.querySelector('.material-select-btn');
+    if (selBtn) selBtn.classList.add('pulse-glow');
+  } else if (guidedStep === 2) {
+    // Step 2: highlight Amount input in this row
+    const amtInp = Array.from(row.querySelectorAll('input')).find(inp => inp.placeholder === 'Amount');
+    if (amtInp) amtInp.classList.add('pulse-glow');
+  } else if (guidedStep === 3) {
+    // Step 3: highlight + Add toolbar button
+    const addBtn = Array.from(document.querySelectorAll('.toolbar .btn'))
+      .find(btn => btn.textContent.trim().startsWith('+ Add'));
+    if (addBtn) addBtn.classList.add('pulse-glow');
+  }
+}
+
+// --- UI Rendering ---
+function render(focusIndex = -1) { // Added optional focusIndex parameter
+  root.innerHTML='';
+  const inputCard=document.createElement('div');
+  inputCard.className='card';
+  root.appendChild(inputCard);
+  const { ratio } = computeTotals();
+
+  // 1. Material Rows
+  materials.forEach((m, i) => {
+    const row = document.createElement('div');
+    row.className = 'material-row';
+
+    // Selection Button (Enhanced)
+    const selWrap = document.createElement('div');
+    selWrap.className = 'material-select-wrap';
+    const selBtn = document.createElement('button');
+    selBtn.className = 'material-select-btn';
+    // Button label: show selected material name if present, else default prompt
+    selBtn.textContent = m.name ? m.name : 'Select ▼';
+    selBtn.onclick = (e) => { e.stopPropagation(); openMaterialPicker(selBtn, i); };
+    selWrap.appendChild(selBtn);
+
+    // Inputs
+    const nameInp = createInput('text', m.name, 'Material', v => { m.name = v; updateLive(); });
+    const cnInp = createInput('number', m.cn, 'C:N', v => { m.cn = v; updateLive(); });
+    const amtInp = createInput('number', m.parts, 'Amount', v => { m.parts = v; updateLive(); });
+    // When user enters an Amount for this row, move guidance to + Add
+    amtInp.addEventListener('input', (e) => {
+      if (e.target.value !== '' && guidedStep === 2 && guidedRow === i) {
+        guidedStep = 3;
+        applyGuidedPulse();
+      }
+    });
+
+    
+    // Unit Select
+    const unitSel = document.createElement('select');
+    ['lbs','oz','g','kg'].forEach(u => {
+      const opt = document.createElement('option');
+      opt.value = u; opt.textContent = u;
+      if(m.unit === u) opt.selected = true;
+      unitSel.appendChild(opt);
+    });
+    unitSel.onchange = (e) => { m.unit = e.target.value; updateLive(); };
+
+    // Remove Button
+    const delBtn = document.createElement('button');
+    delBtn.innerHTML = '✖';
+    delBtn.style.color = '#ff6b6b';
+    delBtn.onclick = () => {
+      pushHistory();
+      materials.splice(i, 1);
+      if(!materials.length) materials.push({ name: '', cn: '', parts: '', unit: 'lbs' });
+      render();
+    };
+
+    row.append(selWrap, nameInp, cnInp, amtInp, unitSel, delBtn);
+    inputCard.appendChild(row);
+  });
+
+  // 2. Toolbar
+  const toolbar = document.createElement('div');
+  toolbar.className = 'toolbar';
+  
+  const btnAdd = createBtn('+ Add', () => {
+    pushHistory();
+    materials.push({name:'', cn:'', parts:'', unit:'lbs'});
+    // Simple glow flow: after + Add is clicked the first time, stop all glow
+    guidedUsed = true; // lock out any future guided glow for this session
+    guidedStep = 0; // 0 = no guided highlight
+    render(); // re-render with no guided pulse
+  });
+  const btnUndo = createBtn('↩ Undo', undo);
+  const btnReset = createBtn('🔄 Reset', () => {
+  if (confirm('Clear all materials and start fresh?')) {
+    materials = [{ name: '', cn: '', parts: '', unit: 'lbs' }];
+    guidedRow = 0;
+    // Only restart the guided glow if it has never completed before
+    if (!guidedUsed) {
+      guidedStep = 1; // initial tutorial glow on Select for the new empty row
+    } else {
+      guidedStep = 0; // keep glow off permanently once the first sequence has completed
+    }
+    // clear existing glows
+    document.querySelectorAll('.pulse-glow').forEach(el => el.classList.remove('pulse-glow'));
+    render(guidedRow);
+  }
+});
+const btnHelp = createBtn('❓ Help', openHelp);
+  
+  // File Ops
+  const btnSave = createBtn('💾 Save', () => {
+    const defaultName = 'MyMix.json';
+    let name = prompt('Name this mix file:', defaultName);
+    if (name === null) return; // user cancelled
+
+    name = name.trim();
+    if (!name) name = defaultName;
+    if (!name.toLowerCase().endsWith('.json')) {
+      name += '.json';
+    }
+
+    const dataToSave = JSON.stringify({ materials, target }, null, 2);
+
+    try {
+      const blob = new Blob([dataToSave], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }, 0);
+
+      if (typeof showToast === 'function') {
+        showToast('💾 File saved as ' + name + ' (check Downloads)');
+      }
+    } catch (err) {
+      console.error('Save failed:', err);
+      if (typeof showToast === 'function') {
+        showToast('❌ Save failed');
+      }
+    }
+  });
+  
+  const loadLabel = document.createElement('label');
+  loadLabel.className = 'btn';
+  loadLabel.textContent = '📂 Open';
+  const loadInput = document.createElement('input');
+  loadInput.type = 'file';
+  loadInput.style.display = 'none';
+  loadInput.accept = '.json';
+  loadInput.onchange = (e) => {
+    const f = e.target.files[0];
+    if(!f) return;
+    const r = new FileReader();
+    r.onload = (evt) => {
+      try {
+        const d = JSON.parse(evt.target.result);
+        if(d.materials) { pushHistory(); materials = d.materials; target = d.target || 42; render(); showToast('📂 File Loaded'); }
+      } catch { alert('Invalid file'); }
+    };
+    r.readAsText(f);
+  };
+  loadLabel.appendChild(loadInput);
+
+  toolbar.append(btnAdd, btnUndo, btnReset, btnSave, loadLabel, btnHelp);
+  inputCard.appendChild(toolbar);
+
+  // 3. Results Card
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.style.marginTop = '20px';
+  card.style.textAlign = 'center';
+
+  const gaugeWidth = calculateGaugeWidth(ratio, target);
+  const ratioVal = ratio ? ratio.toFixed(1) : '--';
+  card.innerHTML = `
+    <div style="font-size:1.2rem; font-weight:700; margin-bottom:8px;">
+      Total C:N ≈ <span style="color:var(--success); font-size:1.5rem;">${ratioVal}:1</span>
+    </div>
+    <div style="font-size:0.9rem; color:var(--muted);">
+      Target: <input type="number" value="${target}" style="width:60px; text-align:center;" onchange="target=this.value; render()"> : 1
+    </div>
+    <div class="gauge-wrap">
+      <div class="gauge-fill" style="width:${gaugeWidth}%"></div>
+    </div>
+    <p style="margin-top:10px; font-size:0.95rem;">${getSuggestion(ratio)}</p>
+  `;
+  root.appendChild(card);
+  
+  // ** NEW LOGIC: Focus the Amount Input **
+  if (typeof focusIndex === 'number' && focusIndex >= 0) {
+    // Timeout ensures the DOM is fully rendered before trying to find the element
+    setTimeout(() => {
+        const row = root.children[focusIndex];
+        // The Amount input is the 4th element (index 3) in the material-row grid
+        if (row && row.classList.contains('material-row')) {
+            const amountInput = row.children[3];
+            if (amountInput) {
+                amountInput.focus();
+            }
+        }
+    }, 0);
+  }
+  // Apply guided pulse highlighting after render
+  applyGuidedPulse();
+}
+
+function createInput(type, val, place, cb) {
+  const i = document.createElement('input');
+  i.type = type; i.value = val; i.placeholder = place;
+  i.oninput = (e) => cb(e.target.value);
+  return i;
+}
+
+function createBtn(txt, cb) {
+  const b = document.createElement('button');
+  b.className = 'btn'; b.textContent = txt;
+  b.onclick = cb;
+  return b;
+}
+
+function updateLive() {
+  // Only update gauge text without re-rendering everything (preserves focus)
+  const { ratio } = computeTotals();
+  const fill = document.querySelector('.gauge-fill');
+  const span = document.querySelector('.card span');
+  if(fill && span) {
+    fill.style.width = calculateGaugeWidth(ratio, target) + '%';
+    span.textContent = (ratio ? ratio.toFixed(1) : '--') + ':1';
+  }
+  
+  // Also update the suggestion text
+  const p = document.querySelector('.card p');
+  if(p) {
+      p.innerHTML = getSuggestion(ratio); // Use innerHTML to allow for <strong> tags
+  }
+}
+
+// --- Material Picker (Dropdown) ---
+let picker = null;
+
+
+function openMaterialPicker(btn, index) {
+
+  // --- Print Button Hide Logic (Global) ---
+  hidePrintButton();
+  // ----------------------------------------
+
+  // Robust toggle: close if clicking same button again
+  if (picker && picker.__ownerBtn === btn) {
+    picker.remove();
+    picker = null;
+    showPrintButton(); // Show button on close
+    return;
+  }
+
+  // Close previous picker if open
+  if (picker) {
+    picker.remove();
+    picker = null;
+    // Print button remains hidden if a new picker is immediately opened
+  }
+
+  // Create new picker
+  picker = document.createElement('div');
+  picker.className = 'enhanced-panel open'; 
+  picker.__ownerBtn = btn;  // Track owner button
+
+  const rect = btn.getBoundingClientRect();
+  const viewportWidth = window.innerWidth;
+  const maxWidth = 320; 
+  const padding = 10;
+  const fixedTop = 20;
+  
+  // --- Positioning Logic ---
+  
+  // 1. Set Width: Use max 320px, but shrink for narrow mobile screens
+  let targetWidth = Math.min(maxWidth, viewportWidth - (2 * padding));
+  picker.style.width = targetWidth + 'px';
+  
+  // 2. Set Horizontal Position: Center the panel relative to the button, but clamp to screen edges
+  let leftPosition = rect.left - (targetWidth / 2) + (rect.width / 2);
+
+  // Clamp left edge
+  if (leftPosition < padding) {
+    leftPosition = padding;
+  }
+  // Clamp right edge
+  if (leftPosition + targetWidth > viewportWidth - padding) {
+    leftPosition = viewportWidth - targetWidth - padding;
+  }
+  picker.style.left = leftPosition + 'px';
+  
+  // 3. Set Vertical Position: Fixed to the top and bottom of the screen with a margin
+  picker.style.top = fixedTop + 'px'; 
+  picker.style.bottom = fixedTop + 'px'; 
+  picker.style.height = `calc(100vh - ${fixedTop * 2}px)`; 
+  
+  // --- End Positioning Logic ---
+
+
+  const search = document.createElement('input');
+  search.className = 'enhanced-search';
+  search.placeholder = 'Search...';
+
+  const list = document.createElement('div');
+  list.className = 'enhanced-list';
+
+  function rebuild(q="") {
+    list.innerHTML = '';
+    Object.keys(groupedPresets).sort().forEach(group => {
+      const items = groupedPresets[group].filter(name =>
+        q === '' || name.toLowerCase().includes(q.toLowerCase())
+      );
+      if (items.length === 0) return;
+
+      const header = document.createElement('div');
+      header.textContent = group;
+      header.style.fontWeight = '700';
+      header.style.margin = '8px 0 4px 0';
+      list.appendChild(header);
+
+      items.sort().forEach(name => {
+        const p = presets.find(x => x.name === name);
+        if (!p) return;
+        const item = document.createElement('div');
+        item.className = 'enhanced-item';
+
+        const label = document.createElement('span');
+        label.className = 'enhanced-item-label';
+        label.textContent = `${p.name} (${p.cn}:1)`;
+
+        item.append(label);
+
+        item.onclick = () => {
+          pushHistory();
+          materials[index].name = p.name;
+          materials[index].cn = p.cn;
+          picker.remove(); picker = null;
+          showPrintButton(); // Show button on close
+          // Step 2: after selecting a material, guide user to Amount
+          // BUT only if the one-time glow tutorial has not already completed
+          if (!guidedUsed && guidedStep) {
+            guidedRow = index;
+            guidedStep = 2;
+          }
+          render(index);
+        };
+        list.appendChild(item);
+      });
+    });
+  }
+
+  search.oninput = (e) => rebuild(e.target.value);
+  rebuild();
+
+  picker.append(search, list);
+  document.body.appendChild(picker);
+  search.focus(); // Focus on search box immediately
+
+  // Close on outside click
+  setTimeout(() => {
+    document.addEventListener('click', function close(e) {
+      if (picker && !picker.contains(e.target) && e.target !== btn) {
+        picker.remove();
+        picker = null;
+        showPrintButton(); // Show button on outside click close
+        document.removeEventListener('click', close);
+      }
+    });
+  }, 10);
+}
+
+
+// --- Help System ---
+
+function openHelp() {
+  const sheet = document.getElementById('helpSheet');
+  const overlay = document.getElementById('helpOverlay');
+  if (sheet && overlay) {
+    sheet.classList.add('show');
+    overlay.classList.add('show');
+  }
+
+  // Ensure the currently active help tab glows when help opens
+  const tabs = document.querySelectorAll('.help-tab');
+  tabs.forEach(t => t.classList.remove('pulse-glow'));
+  const activeTab = document.querySelector('.help-tab.active');
+  if (activeTab) {
+    activeTab.classList.add('pulse-glow');
+  }
+}
+function closeHelp() { document.getElementById('helpSheet').classList.remove('show'); document.getElementById('helpOverlay').classList.remove('show'); }
+function switchTab(id) {
+  // Remove active + glow from all tabs
+  document.querySelectorAll('.help-tab').forEach(t => {
+    t.classList.remove('active');
+    t.classList.remove('pulse-glow');
+  });
+  // Hide all pages
+  document.querySelectorAll('.help-page').forEach(p => p.classList.remove('active'));
+
+  const tabs = document.querySelectorAll('.help-tab');
+  const pages = document.querySelectorAll('.help-page');
+  const map = { 'overview':0, 'cnbasics':1, 'browns':2, 'greens':3, 'adjust':4, 'issues':5 };
+
+  // Activate selected tab
+  if (tabs[map[id]]) {
+    tabs[map[id]].classList.add('active');
+    tabs[map[id]].classList.add('pulse-glow');
+  }
+
+  // Show its page
+  const page = document.getElementById('page-'+id);
+  if (page) page.classList.add('active');
+}
+document.getElementById('helpOverlay').onclick = closeHelp;
+
+// --- Dark Mode ---
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode', toggle.checked);
+});
+
+// Init
+render();
+
+</script>
+</body>
+</html>

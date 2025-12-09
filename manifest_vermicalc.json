@@ -1,0 +1,23 @@
+{
+  "name": "VermiCalc \u2013 Vermicompost Calculator",
+  "short_name": "VermiCalc",
+  "description": "A lightweight vermicomposting mix calculator for accurate C:N ratios and balanced bin management.",
+  "start_url": "/vermicalc/",
+  "scope": "/vermicalc/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#00B6B3",
+  "theme_color": "#00B6B3",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
     "relation": [ "delegate_permission/common.handle_all_urls" ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.VermiCalc.app",
+      "package_name": "io.github.badasbert_maker.twa",
       "sha256_cert_fingerprints": [
         "CB:17:7F:A5:8B:D0:4E:AC:BD:12:52:B7:F1:03:80:08:B1:FF:56:5C:5A:88:81:33:02:47:C5:8D:F1:7C:7D:3A"
       ]
